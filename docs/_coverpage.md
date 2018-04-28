@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-![logo](_media/logo-large.svg)
+![logo](_assets/logo-large.svg)
 
 # docsify <small>3.5</small>
 
@@ -11,4 +11,4 @@
 * Multiple themes
 
 [GitHub](https://github.com/bundlesize/bundlesize)
-[Get Started](#docsify)
+[Get Started](#getting-started)

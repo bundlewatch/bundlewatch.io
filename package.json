@@ -1,4 +1,5 @@
 {
+  "licence": "MIT",
   "devDependencies": {
     "docsify-cli": "^4.2.1"
   }
