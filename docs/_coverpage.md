@@ -2,13 +2,13 @@
 
 ![logo](_assets/logo-large.svg)
 
-# docsify <small>3.5</small>
+> Keep your file sizes in check
 
-> A magical documentation site generator.
-
-* Simple and lightweight (~19kB gzipped)
-* No statically built html files
-* Multiple themes
+* Notice when files drastically increase
+* Ensure you don't serve huge files to customers
+* Block builds when files get too big
 
 [GitHub](https://github.com/bundlesize/bundlesize)
 [Get Started](#getting-started)
+
+![color](linear-gradient(to left bottom, #b3c8ff 0%,#fffcb3 100%))
