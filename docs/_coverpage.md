@@ -9,6 +9,6 @@
 * Block builds when files get too big
 
 [GitHub](https://github.com/bundlesize/bundlesize)
-[Get Started](#getting-started)
+[Get Started](#bundlesize)
 
 ![color](linear-gradient(to left bottom, #b3c8ff 0%,#fffcb3 100%))

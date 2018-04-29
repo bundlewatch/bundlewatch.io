@@ -1,60 +1,54 @@
-# Overview:
-Run `bundlesize` in CI after you have finished building your production assets. Bundlesize will keep track of these files and alert you when they go over max size, or increase/decrease by a certain percentage (against say master). Bundlesize will post back to your Github pull request.
-
-# Getting Started
-
-- With NPM: `npm install @bundlesize/bundlesize --save-dev`
-
-- With Yarn: `yarn add @bundlesize/bundlesize --dev`
-
-- Usage Run: `bundlesize`
+# bundlesize
+[![npm][npm]][npm-url]
+[![bundlesize][bundlesize]][bundlesize-url]
+[![node][node]][node-url]
 
 
-# Configuring Bundlesize
-Bundlesize can read configuration from `.json`, `.js`, or your package.json file. To use `.json` or `.js`, supply the name on the command line `bundlesize --config .bundlesize.config.js`.
+## Overview:
+bundlesize is a file size checker. Its main purpose is to ensure bundled browser assets don't jump in file size.
 
-Otherwise, omit this to have it look in the package.json under the bundlesize key, e.g. package.json.
+Sharp increases in bundlesize can signal something is wrong, for example:
+- added a package that bloated the slug
+- wrong import
+- forgot to minify
 
-```json
-{
-	"name": "my package name",
-	"bundlesize" : "...actualBundleSizeConfig"
-}
+Run `bundlesize` in CI after you have finished building your production assets.
+Bundlesize will keep track of these files and alert you when they go over max size, etc.
+Bundlesize will update status on your GitHub pull request, blocking builds that fail checks.
+
+
+## Installation
+- NPM: `npm install @bundlesize/bundlesize --save-dev`
+- Yarn: `yarn add @bundlesize/bundlesize --dev`
+
+
+## Basic Usage
+```bash
+$yarn run bundlesize --max-size 100kb ./webpack-build/*.js
+
+[WARNING] Some CI configuration options were not found (repoOwner, repoName, commitSha):
+    bundlesize will be unable to report build status, or save comparison data
+    Learn more at: http://bundlesize.io/#/getting-started/the-best-parts
+
+Result breakdown at: https://ja2r7.app.goo.gl/aDzEQjBVMXxrCgaa7
+
+PASS ./webpack-build/app.js: 30.71KB < 100KB (gzip)
+FAIL ./webpack-build/vendor.js: 198.6KB > 100KB (gzip)
+
+bundlesize FAIL
+maxSize check failed
 ```
+Above bundlesize is just running the files through a maxSize check, this is the most basic usage of bundlesize.
+
+Bundlesize can do alot more than this, [check out the-best-parts of bundlesize](getting-started/the-best-parts.md).
 
 
-# Configuration Options
-## Node API
 
-```js
-const defaultConfig = {
-   files: [],
-   bundlesizeServiceHost: 'https://service.bundlesize.io', // Can be a custom service, or set to NUll
-   ci: {
-       githubAccessToken: ciEnv.githubAccessToken,
-       repoOwner: ciEnv.repoOwner,
-       repoName: ciEnv.repoName,
-       repoCurrentBranch: ciEnv.repoCurrentBranch,
-       repoBranchBase: ciEnv.repoBranchBase || 'master', // Branch PR is being merged into
-       commitSha: ciEnv.commitSha,
-       trackBranches: ['master', 'develop'],
-   },
-   defaultCompression: 'gzip',
-}
-```
+[npm]: https://img.shields.io/npm/v/@bundlesize/bundlesize.svg
+[npm-url]: https://npmjs.com/package/@bundlesize/bundlesize
 
-## Command Line Params
+[node]: https://img.shields.io/node/v/@bundlesize/bundlesize.svg
+[node-url]: https://nodejs.org
 
-```js
-program
-   .usage('[options] <filePathGlobs ...>')
-   .option(
-       '--config [configFilePath]',
-       'file to read configuration from, if used all options are blown away',
-   )
-   .option('--max-size [maxSize]', 'maximum size threshold (e.g. 3kb)')
-   .option(
-       '--compression [compression]',
-       'specify which compression algorithm to use',
-   )
-```
+[bundlesize]: https://img.shields.io/badge/bundlesize-checked-green.svg
+[bundlesize-url]: http://bundlesize.io
