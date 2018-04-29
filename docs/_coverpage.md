@@ -2,7 +2,7 @@
 
 ![logo](_assets/logo-large.svg)
 
-> Keep your file sizes in check
+> Keep your bundle size in check
 
 * Notice when files drastically increase
 * Ensure you don't serve huge files to customers
