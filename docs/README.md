@@ -17,9 +17,8 @@ Otherwise, omit this to have it look in the package.json under the bundlesize ke
 
 ```json
 {
-	“name”: “my package name”,
-	“bundlesize” :
-		...bundlesizeConfugration
+	"name": "my package name",
+	"bundlesize" : "...actualBundleSizeConfig"
 }
 ```
 
