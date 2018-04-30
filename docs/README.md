@@ -26,22 +26,17 @@ Bundlesize will update status on your GitHub pull request, blocking builds that 
 ```bash
 $yarn run bundlesize --max-size 100kb ./webpack-build/*.js
 
-[WARNING] Some CI configuration options were not found (repoOwner, repoName, commitSha):
-    bundlesize will be unable to report build status, or save comparison data
-    Learn more at: http://bundlesize.io/#/getting-started/the-best-parts
-
 Result breakdown at: https://ja2r7.app.goo.gl/aDzEQjBVMXxrCgaa7
 
 PASS ./webpack-build/app.js: 30.71KB < 100KB (gzip)
 FAIL ./webpack-build/vendor.js: 198.6KB > 100KB (gzip)
 
 bundlesize FAIL
-maxSize check failed
 ```
 Above bundlesize is just running the files through a maxSize check, this is the most basic usage of bundlesize.
 
-Bundlesize can do alot more than this, [check out the-best-parts of bundlesize](getting-started/the-best-parts.md).
 
+?> Bundlesize can do alot more than this, [check out the-best-parts of bundlesize](getting-started/the-best-parts.md?id=the-best-parts)
 
 
 [npm]: https://img.shields.io/npm/v/@bundlesize/bundlesize.svg

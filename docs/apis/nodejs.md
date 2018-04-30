@@ -10,7 +10,7 @@ const results = await bundlesize({
        maxSize: '100kb',
        compression: 'none',
    }],
-   bundlesizeServiceHost: 'https://service.bundlesize.io', // Can be a custom service, or set to NUll
+   bundlesizeServiceHost: 'https://service.bundlesize.io', // Can be a custom service
    ci: {
        githubAccessToken: ciEnv.githubAccessToken,
        repoOwner: ciEnv.repoOwner,

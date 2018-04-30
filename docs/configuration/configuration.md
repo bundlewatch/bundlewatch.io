@@ -21,8 +21,7 @@ Otherwise, omit this to have it look for the `bundlesize` key in the `package.js
 
 Alternatively supply the config directly to the [Node JS API](apis/nodejs.md)
 
-# Bundlesize Configuration
-## Complete Configuration
+# Configuration Reference
 The only required config is the `files` array, with at least one `path`.
 `myconfig.js`
 ```js
@@ -32,7 +31,7 @@ const bundlesizeConfig = {
        maxSize: '100kb',
        compression: 'none',
    }],
-   bundlesizeServiceHost: 'https://service.bundlesize.io', // Can be a custom service, or set to NUll
+   bundlesizeServiceHost: 'https://service.bundlesize.io', // Can be a custom service
    ci: {
        githubAccessToken: ciEnv.githubAccessToken,
        repoOwner: ciEnv.repoOwner,
@@ -49,7 +48,7 @@ module.exports = bundlesizeConfig
 
 ```
 
-## The `files` Array
+## `files`
 Each `file` in the array is as follows
 ```js
 {
@@ -64,9 +63,8 @@ Each `file` in the array is as follows
 `compression` is optional, and defaults to `gzip`. This string must be one of `gzip`, `brotli` or `none`
 
 
-## The `ci` object
-This object, enables lots of the really cool features of bundlesize.
-// TODO: EXPAND ON THIS
+## `ci`
+This object, enables lots of the [really cool features of bundlesize](getting-started/the-best-parts).
 ```js
 {
     githubAccessToken: ciEnv.githubAccessToken,
@@ -80,7 +78,7 @@ This object, enables lots of the really cool features of bundlesize.
 ```
 
 
-## bundlesizeServiceHost
+## `bundlesizeServiceHost`
 This can be modified if you wish to use a [custom server](configuration/custom-server.md).
 
 

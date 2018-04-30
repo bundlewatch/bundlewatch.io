@@ -1,4 +1,4 @@
-## Command Line Params
+# Command Line
 
 ```bash
 $yarn add @bundlesize/bundlesize --dev
@@ -23,4 +23,25 @@ $yarn bundlesize --help
 
    Use command line
      $ bundlesize --max-size 100KB ./src/*.js /lib/*.js
+```
+
+## Configuring BundleSize
+The bundlesize CLI can read [configuration](configuration/configuration.md) from `.json`, `.js`, or your package.json file.
+To use `.json` or `.js`, supply the name on the command line `bundlesize --config .bundlesize.config.js`.
+
+Otherwise, omit this to have it look for the `bundlesize` key in the `package.json`, e.g.
+
+```json
+{
+	"name": "my package name",
+	"version": "0.0.1",
+	"bundlesize" : {
+	    "files": [
+	        {
+	            "path": "myfolder/*.js",
+	            "maxSize": "100kB"
+	        }
+        ]
+	}
+}
 ```

@@ -392,9 +392,13 @@ body.sticky .sidebar-toggle {
   color: #34495e;
 }
 .markdown-section p.warn {
-  background: rgba(66,185,131,0.1);
+  background: rgb(253, 251, 182);
+  color: #D44308;
   border-radius: 2px;
   padding: 1rem;
+}
+.markdown-section p.warn a {
+  color: #D44308;
 }
 body.close .sidebar {
   -webkit-transform: translateX(-300px);

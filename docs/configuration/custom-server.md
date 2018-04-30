@@ -7,7 +7,7 @@ Then update your configuration to include your server location:
 ```js
 module.exports = {
    files: [...],
-   bundlesizeServiceHost: 'https://bundlesize.example.com',
+   bundlesizeServiceHost: 'https://my-bundlesize-service.example.com',
 }
 ```
 
