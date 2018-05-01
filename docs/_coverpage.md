@@ -1,8 +1,8 @@
 <!-- _coverpage.md -->
 
-![logo](_assets/logo-large.svg)
+<img src="_assets/logo-large.svg" height="100">
 
-> Keep your bundle size in check
+> Keep watch of your bundle size
 
 * Notice when files drastically increase
 * Ensure you don't serve huge files to customers
