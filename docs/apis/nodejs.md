@@ -2,15 +2,15 @@
 The API can be used as below, for detail information on the different params, [see configuration](configuration/configuration.md)
 
 ```js
-import bundlesize from '@bundlesize/bundlesize'
+import bundlewatch from 'bundlewatch'
 
-const results = await bundlesize({
+const results = await bundlewatch({
    files: [{
        path: './myfolder/*.js',
        maxSize: '100kb',
        compression: 'none',
    }],
-   bundlesizeServiceHost: 'https://service.bundlesize.io', // Can be a custom service
+   bundlewatchServiceHost: 'https://service.bundlewatch.io', // Can be a custom service
    ci: {
        githubAccessToken: ciEnv.githubAccessToken,
        repoOwner: ciEnv.repoOwner,
@@ -52,9 +52,9 @@ console.log(results)
 
 
 // Status strings can also be accessed from the api
-// import { STATUSES } from '@bundlesize/bundlesize'
+// import { STATUSES } from 'bundlewatch'
 console.log(result.status === STATUES.FAIL)
 
 ```
 
-An example usage of Node API can be seen in the bundlesizeCLI: https://github.com/bundlesize/bundlesize/blob/master/src/bin/index.js#L43
+An example usage of Node API can be seen in the bundlewatchCLI: https://github.com/bundlewatch/bundlewatch/blob/master/src/bin/index.js#L43

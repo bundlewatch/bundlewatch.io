@@ -1,14 +1,14 @@
-# Configuring Bundlesize
-The [bundlesize CLI](apis/cli.md) can read configuration from `.json`, `.js`, or your package.json file.
-To use `.json` or `.js`, supply the name on the command line `bundlesize --config .bundlesize.config.js`.
+# Configuring bundlewatch
+The [bundlewatch CLI](apis/cli.md) can read configuration from `.json`, `.js`, or your package.json file.
+To use `.json` or `.js`, supply the name on the command line `bundlewatch --config .bundlewatch.config.js`.
 
-Otherwise, omit this to have it look for the `bundlesize` key in the `package.json`, e.g.
+Otherwise, omit this to have it look for the `bundlewatch` key in the `package.json`, e.g.
 
 ```json
 {
 	"name": "my package name",
 	"version": "0.0.1",
-	"bundlesize" : {
+	"bundlewatch" : {
 	    "files": [
 	        {
 	            "path": "myfolder/*.js",
@@ -25,13 +25,13 @@ Alternatively supply the config directly to the [Node JS API](apis/nodejs.md)
 The only required config is the `files` array, with at least one `path`.
 `myconfig.js`
 ```js
-const bundlesizeConfig = {
+const bundlewatchConfig = {
    files: [{
        path: './myfolder/*.js',
        maxSize: '100kb',
        compression: 'none',
    }],
-   bundlesizeServiceHost: 'https://service.bundlesize.io', // Can be a custom service
+   bundlewatchServiceHost: 'https://service.bundlewatch.io', // Can be a custom service
    ci: {
        githubAccessToken: ciEnv.githubAccessToken,
        repoOwner: ciEnv.repoOwner,
@@ -44,7 +44,7 @@ const bundlesizeConfig = {
    defaultCompression: 'gzip',
 }
 
-module.exports = bundlesizeConfig
+module.exports = bundlewatchConfig
 
 ```
 
@@ -64,7 +64,7 @@ Each `file` in the array is as follows
 
 
 ## `ci`
-This object, enables lots of the [really cool features of bundlesize](getting-started/the-best-parts).
+This object, enables lots of the [really cool features of bundlewatch](getting-started/the-best-parts).
 ```js
 {
     githubAccessToken: ciEnv.githubAccessToken,
@@ -78,7 +78,7 @@ This object, enables lots of the [really cool features of bundlesize](getting-st
 ```
 
 
-## `bundlesizeServiceHost`
+## `bundlewatchServiceHost`
 This can be modified if you wish to use a [custom server](configuration/custom-server.md).
 
 

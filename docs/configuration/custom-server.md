@@ -1,13 +1,13 @@
-# Using a Custom server with bundlesize
+# Using a Custom server with bundlewatch
 Fork:
-https://github.com/bundlesize/service
+https://github.com/bundlewatch/service
 And spin up your own instance somewhere
 
 Then update your configuration to include your server location:
 ```js
 module.exports = {
    files: [...],
-   bundlesizeServiceHost: 'https://my-bundlesize-service.example.com',
+   bundlewatchServiceHost: 'https://my-bundlewatch-service.example.com',
 }
 ```
 

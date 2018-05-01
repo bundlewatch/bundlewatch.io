@@ -1,10 +1,10 @@
 # Command Line
 
 ```bash
-$yarn add @bundlesize/bundlesize --dev
-$yarn bundlesize --help
+$yarn add bundlewatch --dev
+$yarn bundlewatch --help
 
-  Usage: bundlesize [options] <filePathGlobs ...>
+  Usage: bundlewatch [options] <filePathGlobs ...>
 
   Options:
 
@@ -16,26 +16,26 @@ $yarn bundlesize --help
   Examples:
 
    Read configuration from package.json
-     $ bundlesize
+     $ bundlewatch
 
    Read configuration from file
-     $ bundlesize --config internals/bundlesize.config.js
+     $ bundlewatch --config internals/bundlewatch.config.js
 
    Use command line
-     $ bundlesize --max-size 100KB ./src/*.js /lib/*.js
+     $ bundlewatch --max-size 100KB ./src/*.js /lib/*.js
 ```
 
-## Configuring BundleSize
-The bundlesize CLI can read [configuration](configuration/configuration.md) from `.json`, `.js`, or your package.json file.
-To use `.json` or `.js`, supply the name on the command line `bundlesize --config .bundlesize.config.js`.
+## Configuring bundlewatch
+The bundlewatch CLI can read [configuration](configuration/configuration.md) from `.json`, `.js`, or your package.json file.
+To use `.json` or `.js`, supply the name on the command line `bundlewatch --config .bundlewatch.config.js`.
 
-Otherwise, omit this to have it look for the `bundlesize` key in the `package.json`, e.g.
+Otherwise, omit this to have it look for the `bundlewatch` key in the `package.json`, e.g.
 
 ```json
 {
 	"name": "my package name",
 	"version": "0.0.1",
-	"bundlesize" : {
+	"bundlewatch" : {
 	    "files": [
 	        {
 	            "path": "myfolder/*.js",

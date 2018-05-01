@@ -8,7 +8,7 @@
 * Ensure you don't serve huge files to customers
 * Block builds when files get too big
 
-[GitHub](https://github.com/bundlesize/bundlesize)
-[Get Started](#bundlesize)
+[GitHub](https://github.com/bundlewatch/bundlewatch)
+[Get Started](#bundlewatch)
 
 ![color](linear-gradient(to left bottom, #b3c8ff 0%,#fffcb3 100%))
