@@ -5,16 +5,16 @@
 
 
 ## Overview:
-BundleWatch is a file size checker. Its main purpose is to ensure bundled browser assets don't jump in file size.
+BundleWatch checks file sizes, ensuring bundled browser assets don't jump in file size.
 
-Sharp increases in BundleWatch can signal something is wrong, for example:
-- added a package that bloated the slug
-- wrong import
-- forgot to minify
+BundleWatch checks for sharp increases in files sizes and can signal when something is wrong, for example:
+- Adding a package that bloats the slug
+- Wrong imports
+- Forgetting to minify
 
-Run `bundlewatch` in CI after you have finished building your production assets.
-BundleWatch will keep track of these files and alert you when they go over max size, etc.
-BundleWatch will update status on your GitHub pull request, blocking builds that fail checks.
+Run `bundlewatch` in CI after you finish building your production assets.
+BundleWatch will keep track of these files and alert you when they go over max size.
+BundleWatch will update its status on your GitHub pull request, blocking builds that fail checks.
 
 
 ## Installation
@@ -33,10 +33,10 @@ FAIL ./webpack-build/vendor.js: 198.6KB > 100KB (gzip)
 
 BundleWatch FAIL
 ```
-Above BundleWatch is just running the files through a maxSize check, this is the most basic usage of BundleWatch.
+As seen above, BundleWatch is running the files through a maxSize check.
 
 
-?> BundleWatch can do alot more than this, [check out the-best-parts of BundleWatch](getting-started/the-best-parts.md?id=the-best-parts)
+?> BundleWatch can do a lot more, too! [check out the-best-parts of BundleWatch](getting-started/the-best-parts.md?id=the-best-parts)
 
 
 [npm]: https://img.shields.io/npm/v/bundlewatch.svg
