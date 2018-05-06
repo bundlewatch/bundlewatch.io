@@ -25,23 +25,5 @@ $yarn bundlewatch --help
      $ bundlewatch --max-size 100KB ./src/*.js /lib/*.js
 ```
 
-## Configuring bundlewatch
-The bundlewatch CLI can read [configuration](configuration/configuration.md) from `.json`, `.js`, or your package.json file.
-To use `.json` or `.js`, supply the name on the command line `bundlewatch --config .bundlewatch.config.js`.
+?> This article is a stub, help by expanding it [at bundlewatch.io on GitHub](https://github.com/bundlewatch/bundlewatch.io/tree/master/docs/getting-started)
 
-Otherwise, omit this to have it look for the `bundlewatch` key in the `package.json`, e.g.
-
-```json
-{
-	"name": "my package name",
-	"version": "0.0.1",
-	"bundlewatch" : {
-	    "files": [
-	        {
-	            "path": "myfolder/*.js",
-	            "maxSize": "100kB"
-	        }
-        ]
-	}
-}
-```

@@ -1,14 +1,12 @@
-* Overview
-  * [Getting Started](README.md)
-  * [The Best Parts](getting-started/the-best-parts.md)
+* Getting Started
+  * [Overview and installation](README.md)
+  * [Using bundlewatch](getting-started/using-bundlewatch.md)
+  * [Using a config file](getting-started/using-a-config-file.md)
+  * [Diffing against branches other than master](getting-started/diffing-against-branches-other-than-master.md)
+  * [Using a custom server](getting-started/using-a-custom-server.md)
 
-* Usage
-  * [CLI](apis/cli.md)
-  * [NodeJS API <sup style="color:red">(new)<sup>](apis/nodejs.md)
+* Reference
+  * [Configuration](reference/configuration.md)
+  * [NodeJS API <sup style="color:red">(new)<sup>](reference/nodejs.md)
+  * [CLI Params](reference/cli.md)
 
-* Configuration
-  * [Configuration Reference](configuration/configuration.md)
-  * [Custom Server <sup style="color:red">(new)<sup>](configuration/custom-server.md)
-
-* Guides
-  * [Setting up with CircleCI + Webpack](guides/circleci-webpack.md)

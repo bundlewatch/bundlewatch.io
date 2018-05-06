@@ -16,27 +16,18 @@ Run `bundlewatch` in CI after you finish building your production assets.
 BundleWatch will keep track of these files and alert you when they go over max size.
 BundleWatch will update its status on your GitHub pull request, blocking builds that fail checks.
 
-
 ## Installation
-- NPM: `npm install bundlewatch --save-dev`
-- Yarn: `yarn add bundlewatch --dev`
-
-
-## Basic Usage
-```bash
-$yarn run bundlewatch --max-size 100kb ./webpack-build/*.js
-
-Result breakdown at: https://ja2r7.app.goo.gl/aDzEQjBVMXxrCgaa7
-
-PASS ./webpack-build/app.js: 30.71KB < 100KB (gzip)
-FAIL ./webpack-build/vendor.js: 198.6KB > 100KB (gzip)
-
-BundleWatch FAIL
+### NPM:
 ```
-As seen above, BundleWatch is running the files through a maxSize check.
+npm install bundlewatch --save-dev
+```
 
+### Yarn:
+```
+yarn add bundlewatch --dev
+```
 
-?> BundleWatch can do a lot more, too! [check out the-best-parts of BundleWatch](getting-started/the-best-parts.md?id=the-best-parts)
+Now you're ready to use bundlewatch [check out using BundleWatch](getting-started/using-bundlewatch.md)
 
 
 [npm]: https://img.shields.io/npm/v/bundlewatch.svg
