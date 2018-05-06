@@ -1,5 +1,5 @@
 # NodeJS Api
-The API can be used as below, for detail information on the different params, [see configuration](configuration/configuration.md)
+The API can be used as below, for detail information on the different params, [see configuration](reference/configuration.md)
 
 ```js
 import bundlewatch from 'bundlewatch'
@@ -58,3 +58,6 @@ console.log(result.status === STATUES.FAIL)
 ```
 
 An example usage of Node API can be seen in the bundlewatchCLI: https://github.com/bundlewatch/bundlewatch/blob/master/src/bin/index.js#L43
+
+?> This article is a stub, help by expanding it [at bundlewatch.io on GitHub](https://github.com/bundlewatch/bundlewatch.io/tree/master/docs/getting-started)
+
