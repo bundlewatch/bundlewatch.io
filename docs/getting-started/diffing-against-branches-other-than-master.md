@@ -20,7 +20,7 @@ If you want to diff against branches other that develop or master. You will need
         "ci": {
             "trackBranches": ["master", "develop", "staging"]
         }
-	}
+    }
 }
 ```
 
