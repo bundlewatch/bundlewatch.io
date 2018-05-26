@@ -21,7 +21,7 @@ BundleWatch can report its status on your GitHub Pull Requests.
 ## Setup CI Auth Variables Needed by BundleWatch:
 - `BUNDLEWATCH_GITHUB_TOKEN`
 
-You will need to give BundleWatch access to your GitHub repos, which can be done by heading to:
+You will need to give BundleWatch access to your GitHub Statuses, which can be done by heading to:
 https://service.bundlewatch.io/setup-github
 
 This will give you your `BUNDLEWATCH_GITHUB_TOKEN`. You will need to set this as an environment variable in CI.
