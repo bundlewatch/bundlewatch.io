@@ -3,6 +3,7 @@
     <img src="https://cdn.rawgit.com/bundlewatch/bundlewatch.io/master/docs/_assets/logo-large.svg" height="100px">
   </a>
   <br>
+
 [![bundlewatch][bundlewatch]][bundlewatch-url]
 
 [![deps][deps]][deps-url]
