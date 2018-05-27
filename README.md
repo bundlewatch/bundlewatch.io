@@ -12,7 +12,7 @@
 </div>
 
 ## This repo is the bundlewatch.io website
-The BundleWatch app is at https://github.com/bundlewatch/bundlewatch
+The BundleWatch CLI app and Node API is at https://github.com/bundlewatch/bundlewatch
 
 The BundleWatch service is at https://github.com/bundlewatch/service
 
