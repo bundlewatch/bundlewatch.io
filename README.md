@@ -42,8 +42,6 @@ Contributions of any kind are welcome! [Join us on Slack](https://join.slack.com
 
 Documentation powered by [docsifyJS](https://docsify.js.org/)
 
-&copy; 2018 BundleWatch
-
 [bundlewatch]: https://img.shields.io/badge/bundle-watched-blue.svg
 [bundlewatch-url]: https://bundlewatch.io
 
