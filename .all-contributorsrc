@@ -1,0 +1,23 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "martinlaws",
+      "name": "Martin Laws",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/13721239?v=4",
+      "profile": "http://consultlowtide.ca",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "bundlewatch.io",
+  "projectOwner": "bundlewatch",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
