@@ -10,5 +10,3 @@
 
 [GitHub](https://github.com/bundlewatch/bundlewatch)
 [Get Started](#bundlewatch)
-
-![color](linear-gradient(to left bottom, #b3c8ff 0%,#fffcb3 100%))
