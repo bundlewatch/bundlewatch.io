@@ -4,7 +4,7 @@
   </a>
   <br>
 
-[![bundlewatch][bundlewatch]][bundlewatch-url]'
+[![bundlewatch][bundlewatch]][bundlewatch-url]
 [![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
 
 [![deps][deps]][deps-url]
