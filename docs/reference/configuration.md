@@ -45,7 +45,14 @@ Used to remove parts of filenames, e.g. if your filenames contain hashes like `m
 
 Takes a `RegExp` or `string` that gets parsed into a RegExp. Any matches by the regular expression will be removed.
 
-e.g. a hash remover: `/^.+?(\..+?)\.\w+$/` - finds characters between a dot and the extension and removes them. 
+Examples:
+
+### Hash remover: 
+Finds characters between a dot and the extension and removes them. 
+
+RegExp: `/^.+?(\..+?)\.\w+$/`
+
+String: `"^.+?(\\..+?)\\.\\w+$"`
 
 ## `ci`
 This object, enables the [core features of bundlewatch](getting-started/using-bundlewatch).
