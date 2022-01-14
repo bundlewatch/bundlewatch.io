@@ -43,11 +43,11 @@ Each `file` in the array is as follows
 ## `normalizeFilenames`
 Used to remove parts of filenames, e.g. if your filenames contain hashes like `main.abc134.js`.
 
-Takes a `RegExp` or `string` that gets parsed into a RegExp. Any matches by the regular expression will be removed.
+Takes a `RegExp` or `string` that gets parsed into a RegExp. Any matches by the regular expression capturing groups will be removed.
 
 Examples:
 
-### Hash remover: 
+**Hash remover:**
 Finds characters between a dot and the extension and removes them. 
 
 RegExp: `/^.+?(\..+?)\.\w+$/`
