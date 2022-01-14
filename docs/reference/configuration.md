@@ -8,6 +8,7 @@ const bundlewatchConfig = {
        maxSize: '100kb',
        compression: 'none',
    }],
+   normalizeFilenames: /^.+?(\..+?)\.\w+$/,
    bundlewatchServiceHost: 'https://service.bundlewatch.io', // Can be a custom service
    ci: {
        githubAccessToken: ciEnv.githubAccessToken,
@@ -39,6 +40,19 @@ Each `file` in the array is as follows
 `maxSize` is optional, but defaults to Infinity, this should be set to a string of the maxSize, e.g. '100KB'
 `compression` is optional, and defaults to `gzip`. This string must be one of `gzip`, `brotli` or `none`
 
+## `normalizeFilenames`
+Used to remove parts of filenames, e.g. if your filenames contain hashes like `main.abc134.js`.
+
+Takes a `RegExp` or `string` that gets parsed into a RegExp. Any matches by the regular expression will be removed.
+
+Examples:
+
+### Hash remover: 
+Finds characters between a dot and the extension and removes them. 
+
+RegExp: `/^.+?(\..+?)\.\w+$/`
+
+String: `"^.+?(\\..+?)\\.\\w+$"`
 
 ## `ci`
 This object, enables the [core features of bundlewatch](getting-started/using-bundlewatch).
