@@ -7,8 +7,6 @@
 [![bundlewatch][bundlewatch]][bundlewatch-url]
 [![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
 
-[![deps][deps]][deps-url]
-[![dev-deps][dev-deps]][dev-deps-url]
 <br>
 <a href="https://github.com/bundlewatch/bundlewatch.io/graphs/contributors">
     <img src="https://img.shields.io/github/contributors/bundlewatch/bundlewatch.io.svg">
@@ -50,12 +48,6 @@ Documentation powered by [docsifyJS](https://docsify.js.org/)
 
 [bundlewatch]: https://img.shields.io/badge/bundle-watched-blue.svg
 [bundlewatch-url]: https://bundlewatch.io
-
-[deps]: https://david-dm.org/bundlewatch/bundlewatch.io/status.svg
-[deps-url]: https://david-dm.org/bundlewatch/bundlewatch.io
-
-[dev-deps]: https://david-dm.org/bundlewatch/bundlewatch.io/dev-status.svg
-[dev-deps-url]: https://david-dm.org/bundlewatch/bundlewatch.io?type=dev
 
 [emojis]: https://github.com/kentcdodds/all-contributors#emoji-key
 
