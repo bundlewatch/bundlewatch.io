@@ -6,7 +6,6 @@
 
 [![bundlewatch][bundlewatch]][bundlewatch-url]
 [![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
-
 <br>
 <a href="https://github.com/bundlewatch/bundlewatch.io/graphs/contributors">
     <img src="https://img.shields.io/github/contributors/bundlewatch/bundlewatch.io.svg">
