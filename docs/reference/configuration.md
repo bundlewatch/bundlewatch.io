@@ -10,6 +10,7 @@ const bundlewatchConfig = {
    }],
    normalizeFilenames: /^.+?(\..+?)\.\w+$/,
    bundlewatchServiceHost: 'https://service.bundlewatch.io', // Can be a custom service
+   shortenURLServiceHost: true, // Set to false to disable URL shortening
    ci: {
        githubAccessToken: ciEnv.githubAccessToken,
        repoOwner: ciEnv.repoOwner,
@@ -71,5 +72,9 @@ This object, enables the [core features of bundlewatch](getting-started/using-bu
 
 ## `bundlewatchServiceHost`
 This can be modified if you wish to use a [custom server](getting-started/using-a-custom-server.md).
+
+
+## `shortenURLServiceHost`
+This can be set to `false` if you wish to disable URL shortening.
 
 ?> This article is a stub, help by expanding it [at bundlewatch.io on GitHub](https://github.com/bundlewatch/bundlewatch.io/tree/master/docs/getting-started)
