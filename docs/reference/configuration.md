@@ -75,6 +75,6 @@ This can be modified if you wish to use a [custom server](getting-started/using-
 
 
 ## `shortenURLServiceHost`
-This can be set to `false` if you wish to disable URL shortening.
+This can be set to `false` to disable URL shortening service.
 
 ?> This article is a stub, help by expanding it [at bundlewatch.io on GitHub](https://github.com/bundlewatch/bundlewatch.io/tree/master/docs/getting-started)
