@@ -34,4 +34,4 @@ Sharp increases in BundleWatch can signal that something is wrong, such as addin
 
 Contributions of any kind are welcome!
 
-Documentation powered by [docsifyJS](https://docsify.js.org/)
+Documentation powered by [vitepress](https://vitepress.dev/)

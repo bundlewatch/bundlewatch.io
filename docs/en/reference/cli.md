@@ -24,6 +24,3 @@ $yarn bundlewatch --help
    Use command line
      $ bundlewatch --max-size 100KB ./src/*.js /lib/*.js
 ```
-
-?> This article is a stub, help by expanding it [at bundlewatch.io on GitHub](https://github.com/bundlewatch/bundlewatch.io/tree/master/docs/getting-started)
-

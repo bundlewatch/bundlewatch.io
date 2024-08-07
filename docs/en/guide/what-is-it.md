@@ -1,10 +1,13 @@
-# BundleWatch
-[![npm][npm]][npm-url]
-[![bundlewatch][bundlewatch]][bundlewatch-url]
-[![node][node]][node-url]
 
 
-## Overview:
+
+# What is BundleWatch?
+
+
+
+ [![npm][npm]][npm-url] [![bundlewatch][bundlewatch]][bundlewatch-url] [![node][node]][node-url]
+
+
 BundleWatch checks file sizes, ensuring bundled browser assets don't jump in file size.
 
 BundleWatch checks for sharp increases in files sizes and can signal when something is wrong, for example:
@@ -16,18 +19,8 @@ Run `bundlewatch` in CI after you finish building your production assets.
 BundleWatch will keep track of these files and alert you when they go over max size.
 BundleWatch will update its status on your GitHub pull request, blocking builds that fail checks.
 
-## Installation
-### NPM:
-```
-npm install bundlewatch --save-dev
-```
 
-### Yarn:
-```
-yarn add bundlewatch --dev
-```
 
-Now you're ready to use bundlewatch [check out using BundleWatch](getting-started/using-bundlewatch.md)
 
 
 [npm]: https://img.shields.io/npm/v/bundlewatch.svg
@@ -38,3 +31,5 @@ Now you're ready to use bundlewatch [check out using BundleWatch](getting-starte
 
 [bundlewatch]: https://img.shields.io/badge/bundle-watched-blue.svg
 [bundlewatch-url]: http://bundlewatch.io
+
+
