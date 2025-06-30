@@ -9,7 +9,8 @@ FAIL ./webpack-build/vendor.js: 198.6KB > 100KB (gzip)
 
 BundleWatch FAIL
 ```
-This will give you command line output. If you want BundleWatch to report build status on your pull requests, see below.
+You can run this to get command line output.
+If you want BundleWatch to report build status on your pull requests, see below on running it in your CI.
 
 ## Adding Build Status:
 BundleWatch can report its status on your GitHub Pull Requests.
@@ -17,6 +18,49 @@ BundleWatch can report its status on your GitHub Pull Requests.
 <div align="center">
     <img alt="build status preview" src="https://raw.githubusercontent.com/bundlewatch/bundlewatch.io/master/docs/_assets/build-status-preview.png" width="700px">
 </div>
+
+For this to work you will need:
+1. An npm script to run `bundlewatch`
+2. [Optional] a Bundlewatch configuration in place (you can skip this if you supply the configuration directly in your npm script)
+3. Correct CI env variables (see below)
+4. Adding a build step that runs that npm script to your CI pipeline
+
+### Example: `package.json` with configuration and a script
+```javascript
+{
+    "name": "my-web-app",
+    "scripts": {
+        ...
+        "bundlewatch": "bundlewatch",
+        ...
+    },
+    "bundlewatch": {
+        "files": [
+            {
+                "path": "dist/*.js",
+                "maxSize": "100kB"
+            }
+        ]
+    },
+    "devDependencies": {
+        ...
+        "bundlewatch": "0.3.3",
+        ...
+    },
+}
+
+```
+
+### Example: CI flow that includes a bundlewatch step (this is for CircleCI but they are all very similar)
+```yaml
+jobs:
+  build-and-test:
+    steps:
+      - run:
+            name: Verify bundle size
+            command: |
+              npm run bundlewatch
+```
 
 ## Setup CI Auth Variables Needed by BundleWatch:
 - `BUNDLEWATCH_GITHUB_TOKEN`
