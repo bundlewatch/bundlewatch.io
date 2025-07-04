@@ -1,8 +1,8 @@
 # Command Line
 
 ```bash
-$yarn add bundlewatch --dev
-$yarn bundlewatch --help
+yarn add bundlewatch --dev
+yarn bundlewatch --help
 
   Usage: bundlewatch [options] <filePathGlobs ...>
 
@@ -11,6 +11,7 @@ $yarn bundlewatch --help
     --config [configFilePath]    file to read configuration from, if used all options are blown away
     --max-size [maxSize]         maximum size threshold (e.g. 3kb)
     --compression [compression]  specify which compression algorithm to use
+    --normalize [regex]          normalize filenames via regex, any match will be removed
     -h, --help                   output usage information
 
   Examples:
