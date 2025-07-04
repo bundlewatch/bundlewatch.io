@@ -8,7 +8,7 @@ hero:
     alt: BundleWatch
   name: BundleWatch
   text: Keep watch of your bundle size
-  tagline: Notice when files drastically increase Ensure you don't serve huge files to customers Block builds when files get too big
+  tagline: Notice when files drastically increase. Ensure you don't serve huge files to customers. Block builds when files get too big.
 
   actions:
     - theme: brand

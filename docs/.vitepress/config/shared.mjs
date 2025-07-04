@@ -1,12 +1,10 @@
 import { defineConfig } from "vitepress";
 import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 
-import { search as zhSearch } from "./zh.mjs";
-
 export const shared = defineConfig({
-  title: "bundlewatch",
+  title: "BundleWatch",
 
-  base:'/bundlewatch.io/',
+  base: "/bundlewatch.io/",
 
   rewrites: {
     "en/:rest*": ":rest*",
@@ -44,11 +42,6 @@ export const shared = defineConfig({
 
     search: {
       provider: "local",
-      options: {
-        locales: {
-          ...zhSearch,
-        },
-      },
     },
   },
 });

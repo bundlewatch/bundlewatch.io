@@ -16,7 +16,8 @@ export const en = defineConfig({
     },
 
     editLink: {
-      pattern: "https://github.com/bundlewatch/bundlewatch.io/edit/master/docs/:path",
+      pattern:
+        "https://github.com/bundlewatch/bundlewatch.io/edit/master/docs/:path",
       text: "Edit this page on GitHub",
     },
 
@@ -26,7 +27,7 @@ export const en = defineConfig({
 
     footer: {
       message: "Released under the MIT License.",
-      copyright: `Copyright © ${new Date().getFullYear()} bundlewatch`,
+      copyright: `Copyright © ${new Date().getFullYear()} BundleWatch`,
     },
   },
 });
@@ -44,11 +45,11 @@ function nav() {
       activeMatch: "/reference/",
     },
     {
-      text: "0.4.0",
+      text: "0.4.1",
       items: [
         {
           text: "Release Notes",
-          link: "https://github.com/bundlewatch/bundlewatch/releases/tag/v0.4.0",
+          link: "https://github.com/bundlewatch/bundlewatch/releases/tag/v0.4.1",
           target: "_blank",
         },
         {
@@ -68,7 +69,7 @@ function sidebarGuide() {
       items: [
         { text: "What is it?", link: "what-is-it" },
         { text: "Getting Started", link: "getting-started" },
-        { text: "Using bundlewatch", link: "using-bundlewatch" },
+        { text: "Using BundleWatch", link: "using-bundlewatch" },
         { text: "Using a config file", link: "using-a-config-file" },
         {
           text: "Diffing against branches other than master",
