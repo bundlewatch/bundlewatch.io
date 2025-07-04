@@ -7,8 +7,6 @@
 
 Keep watch of your bundle size.
 
-[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/bundlewatch/bundlewatch.io/blob/master/LICENSE)
-
 </div>
 
 <hr />
