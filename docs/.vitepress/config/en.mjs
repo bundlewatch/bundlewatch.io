@@ -27,7 +27,7 @@ export const en = defineConfig({
 
     footer: {
       message: "Released under the MIT License.",
-      copyright: `Copyright © ${new Date().getFullYear()} BundleWatch`,
+      copyright: `Copyright © 2018-present BundleWatch`,
     },
   },
 });
@@ -82,6 +82,11 @@ function sidebarGuide() {
         },
         { text: "Using a custom server", link: "using-a-custom-server" },
       ],
+    },
+    {
+      text: "Config, API, and CLI reference",
+      base: "/reference/",
+      link: "configuration",
     },
   ];
 }
