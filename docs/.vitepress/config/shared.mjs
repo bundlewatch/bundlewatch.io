@@ -4,13 +4,10 @@ import { tabsMarkdownPlugin } from "vitepress-plugin-tabs";
 export const shared = defineConfig({
   title: "BundleWatch",
 
-  base: "/bundlewatch.io/",
-
   rewrites: {
     "en/:rest*": ":rest*",
   },
 
-  lastUpdated: true,
   cleanUrls: true,
   metaChunk: true,
 
@@ -21,13 +18,6 @@ export const shared = defineConfig({
     lineNumbers: true,
     config(md) {
       md.use(tabsMarkdownPlugin);
-    },
-    container: {
-      tipLabel: "提示",
-      warningLabel: "警告",
-      dangerLabel: "危险",
-      infoLabel: "信息",
-      detailsLabel: "详细信息",
     },
   },
 

@@ -1,19 +1,23 @@
+---
+title: Diffing Against Branches Other Than Master
+description: How to configure Bundlewatch to diff against branches like develop or staging.
+---
+
 # Diffing Against Branches Other Than Master
 
-After running through [using bundlewatch](/guide/using-bundlewatch.md), BundleWatch will automatically diff against master.
+By default, after following the [Using Bundlewatch](./using-bundlewatch.md) guide, Bundlewatch will diff your bundles against the `master` branch.
 
-If you want to set up diffing for other branches (e.g. develop) there is one more CI variable that is required.
+If you want to diff against another branch (e.g. `develop`), set the following CI environment variable:
 
 - `CI_BRANCH_BASE`
 
-If you're using, _Travis_ or _Drone_ you shouldn't need to set this.
+If you're using Travis or Drone, this is usually set automatically.
 
 ::: info Info
-Have a look at the source code to see which variables are automatically found: https://github.com/bundlewatch/bundlewatch/blob/master/src/app/config/getCIVars.js
+See which CI variables are automatically detected in the [getCIVars.js source code](https://github.com/bundlewatch/bundlewatch/blob/master/src/app/config/getCIVars.js).
 :::
 
-If you want to diff against branches other that develop or master. You will need to supply these settings to BundleWatch
-`package.json`
+To diff against multiple branches (e.g. `develop`, `staging`), add the `trackBranches` option to your Bundlewatch config in `package.json`:
 
 ```json
 {
@@ -30,3 +34,5 @@ If you want to diff against branches other that develop or master. You will need
   }
 }
 ```
+
+For more configuration options, see the [Configuration Reference](../reference/configuration.md).

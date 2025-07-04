@@ -1,35 +1,27 @@
+---
+title: What is Bundlewatch?
+description: Learn what Bundlewatch is and how it helps monitor your bundle size.
+---
 
+# What is Bundlewatch?
 
+Bundlewatch is a tool that checks the size of your bundled browser assets, helping you prevent unexpected increases in file size.
 
-# What is BundleWatch?
+## Why Use Bundlewatch?
 
+Bundlewatch helps you:
 
+- Detect when a new dependency bloats your bundle
+- Catch accidental large imports
+- Ensure assets are properly minified
+- Prevent regressions in bundle size over time
 
- [![npm][npm]][npm-url] [![bundlewatch][bundlewatch]][bundlewatch-url] [![node][node]][node-url]
+::: tip
+Run `bundlewatch` in your CI pipeline after building your production assets. Bundlewatch will track these files and alert you if they exceed your configured size limits.
+:::
 
+If a file goes over the maximum size, Bundlewatch will update the status on your GitHub pull request, and can block merges that fail checks.
 
-BundleWatch checks file sizes, ensuring bundled browser assets don't jump in file size.
+---
 
-BundleWatch checks for sharp increases in files sizes and can signal when something is wrong, for example:
-- Adding a package that bloats the slug
-- Wrong imports
-- Forgetting to minify
-
-Run `bundlewatch` in CI after you finish building your production assets.
-BundleWatch will keep track of these files and alert you when they go over max size.
-BundleWatch will update its status on your GitHub pull request, blocking builds that fail checks.
-
-
-
-
-
-[npm]: https://img.shields.io/npm/v/bundlewatch.svg
-[npm-url]: https://npmjs.com/package/bundlewatch
-
-[node]: https://img.shields.io/node/v/bundlewatch.svg
-[node-url]: https://nodejs.org
-
-[bundlewatch]: https://img.shields.io/badge/bundle-watched-blue.svg
-[bundlewatch-url]: http://bundlewatch.io
-
-
+For more details, see the [Getting Started guide](./getting-started.md) or the [Configuration Reference](../reference/configuration.md).

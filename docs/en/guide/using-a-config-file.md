@@ -1,9 +1,19 @@
-# Using a configuration file
+---
+title: Using a Config File
+description: How to configure Bundlewatch using a config file or package.json.
+---
 
-The [bundlewatch CLI](/reference/cli.md) can read configuration from `.json`, `.js`, or your package.json file.
-To use `.json` or `.js`, supply the name on the command line `bundlewatch --config .bundlewatch.config.js`.
+# Using a Configuration File
 
-Otherwise, omit this to have it look for the `bundlewatch` key in the `package.json`, e.g.
+The [Bundlewatch CLI](../reference/cli.md) can read configuration from a `.json`, `.js`, or your `package.json` file.
+
+- To use a custom config file, specify it on the command line:
+  ```bash
+  bundlewatch --config .bundlewatch.config.js
+  ```
+- If you omit the `--config` flag, Bundlewatch will look for a `bundlewatch` key in your `package.json`.
+
+Example `package.json` configuration:
 
 ```json
 {
@@ -20,4 +30,4 @@ Otherwise, omit this to have it look for the `bundlewatch` key in the `package.j
 }
 ```
 
-Alternatively supply the config directly to the [Node JS API](/reference/nodejs.md)
+You can also supply the config directly to the [Node.js API](../reference/nodejs.md).

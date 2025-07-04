@@ -65,10 +65,15 @@ function nav() {
 function sidebarGuide() {
   return [
     {
-      text: "introduce",
+      text: "Introduction",
       items: [
         { text: "What is it?", link: "what-is-it" },
         { text: "Getting Started", link: "getting-started" },
+      ],
+    },
+    {
+      text: "How to use",
+      items: [
         { text: "Using BundleWatch", link: "using-bundlewatch" },
         { text: "Using a config file", link: "using-a-config-file" },
         {
