@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import pkg from '../../../package.json' with { type: 'json' }
 
 export const en = defineConfig({
   lang: "en-US",
@@ -45,7 +46,7 @@ function nav() {
       activeMatch: "/reference/",
     },
     {
-      text: "0.4.1",
+      text: pkg.bundlewatch.version,
       items: [
         {
           text: "Release Notes",
