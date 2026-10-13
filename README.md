@@ -11,6 +11,13 @@ Keep watch of your bundle size.
 
 <hr />
 
+> [!IMPORTANT]
+> **This repository has moved.** The documentation site now lives in [`packages/website`](https://github.com/bundlewatch/bundlewatch/tree/main/packages/website) of the [bundlewatch repository](https://github.com/bundlewatch/bundlewatch), and [bundlewatch.io](https://bundlewatch.io) is deployed from there.
+>
+> This repository is archived and read-only: suggest documentation changes in [bundlewatch/bundlewatch](https://github.com/bundlewatch/bundlewatch), where every pull request gets a preview of the site.
+>
+> The images in `docs/_assets/` stay available here, because older READMEs and pages still link to them.
+
 BundleWatch checks file sizes, ensuring bundled browser assets don't jump in file size.
 
 Sharp increases in BundleWatch can signal that something is wrong, such as adding a package that bloats the slug, an incorrect import, or forgetting to minify.
